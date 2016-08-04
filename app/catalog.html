@@ -114,7 +114,7 @@
       <h1 class="catalog-title">Сливочное мороженое</h1>
       <!-- end catalog-title -->
       <section class="filter">
-        <form class="filter__form" action="#" method="post">
+        <form class="filter-form" action="#" method="post">
           <!-- сортировка -->
           <div class="filter__sort">
             <label class="filter__sort--title"
@@ -127,7 +127,25 @@
             </select>
           </div>
           <!-- цена -->
-          <div class="filter__price"></div>
+          <div class="filter__custom">
+            <div class="filter__range">
+              <span class="filter__price">Цена:</span>
+              <input type="text" name="min-price" id="min-price-field" value="100">
+              <span class="filter__currency">руб.</span>
+              <input type="text" name="max-price" id="max-price-field" value="500">
+              <span class="filter__currency">руб.</span>
+            </div>
+            <!-- end filter__range -->
+            <div class="filter__controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__toggle filter__toggle--min"></div>
+              <div class="filter__toggle filter__toggle--max"></div>
+            </div>
+            <!-- end filter__controls -->
+
+          </div>
           <!-- жирность -->
           <div class="filter__fatness">
             <fieldset>
