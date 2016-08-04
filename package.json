@@ -1,0 +1,44 @@
+{
+  "name": "Styletour",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект Gllacy от HTML академии",
+  "author": "Anatoliy Vershinin",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/htmlacademy-htmlcss/81582-gllacy.git"
+
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-htmlcss/81582-gllacy/issues"
+  },
+  "homepage": "https://github.com/A-Vershinin/81582-gllacy",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "browser-sync": "2.12.10",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "3.9.1",
+    "gulp-csso": "2.0.0",
+    "gulp-imagemin": "3.0.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.1",
+    "gulp-svgmin": "1.2.2",
+    "gulp-svgstore": "6.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.1.1",
+    "run-sequence": "1.2.1",
+    "css-mqpacker": "5.0.1",
+    "del": "2.2.0"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "engines": {
+    "node": "5.11"
+  }
+}

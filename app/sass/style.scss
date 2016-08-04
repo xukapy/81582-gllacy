@@ -1,0 +1,21 @@
+/* подключаем все кусочки кодов в главный файл*/
+@import "normalize.scss";
+
+/* Переменные и миксины*/
+@import "variables.scss";
+@import "mixins.scss";
+@import "media.scss";
+
+/* Гломадбные стили для всего проекта*/
+@import "global/fonts.scss";
+@import "global/layout.scss";
+@import "global/forms.scss";
+@import "global/type.scss";
+
+
+/* Стили различных BEM-блоков*/
+@import "blocks/page-header.scss";
+@import "blocks/page-content.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/reviews.scss";
+@import "blocks/main-nav.scss";
