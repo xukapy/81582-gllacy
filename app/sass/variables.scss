@@ -1,1 +1,33 @@
 /* переменные цветом и типографики*/
+$base-color: #323232;
+// $dark-base-color: #3bb09d;
+// $additional-color: #56C3B2;
+// $gray-color: #F1F1F1;
+
+$roboto-regular: "RobotoRegular", "Arial", sans-serif;
+$roboto-medium: "RobotoMedium", "Arial", sans-serif;
+$roboto-bold: "RobotoBold", "Arial", sans-serif;
+
+$button-textcolor: #fff;
+$button-textcolor-active: #fceeec;
+
+$border-color: rgba(178, 178, 178, 0.52);
+$border-color-hover: rgba(154, 154, 154, 0.52);
+$border-color-focus: rgba(46, 136, 228, 0.52);
+
+$input-text-color: #999;
+$input-textarea-color: #323232;
+
+$link: #fff;
+$link-hover: #ffbc9e;
+$link-active: #ffbc9e;
+
+$link2: #323232;
+$link2-hover: #e84d37;
+$link2-active: #e84d37;
+
+$nav-background-hover: #fbded7;
+$nav-background-active: #f6b5a5;
+$nav-background-page: #d07058;
+
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
