@@ -116,8 +116,8 @@
       <section class="filter">
         <form class="filter-form" action="#" method="post">
           <!-- сортировка -->
-          <div class="filter__sort">
-            <label class="filter__sort--title"
+          <div class="filter-sort">
+            <label class="filter-sort__title"
               for="sort-list-field">Сортировка:</label>
             <select name="sort-list" id="sort-list-field">
               <option value="по популярности">по популярности</option>
@@ -127,8 +127,8 @@
             </select>
           </div>
           <!-- цена -->
-          <div class="filter__custom">
-            <div class="filter__range">
+          <div class="filter-custom">
+            <div class="filter-custom__range">
               <span class="filter__price">Цена:</span>
               <input type="text" name="min-price" id="min-price-field" value="100">
               <span class="filter__currency">руб.</span>
@@ -136,7 +136,7 @@
               <span class="filter__currency">руб.</span>
             </div>
             <!-- end filter__range -->
-            <div class="filter__controls">
+            <div class="filter-custom__controls">
               <div class="filter__scale">
                 <div class="filter__bar"></div>
               </div>
@@ -147,9 +147,9 @@
 
           </div>
           <!-- жирность -->
-          <div class="filter__fatness">
+          <div class="filter-fatness">
             <fieldset>
-            <legend class="filter__fatness--title">Жирность</legend>
+            <legend class="filter-fatness__title">Жирность</legend>
 
             <input type="radio" name="group-one" id="first-value-field">
             <label for="first-value-field">0%</label>
@@ -165,9 +165,9 @@
             </fieldset>
           </div>
           <!-- наполнители -->
-          <div class="filter__fillers">
+          <div class="filter-fillers">
             <fieldset>
-            <legend class="filter__fillers--title">Наполнители</legend>
+            <legend class="filter-fillers__title">Наполнители</legend>
 
             <input type="checkbox" name="filler-one" id="filler-one-field" checked>
             <label for="filler-one-field">шоколадные</label>
