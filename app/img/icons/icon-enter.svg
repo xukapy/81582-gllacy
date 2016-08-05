@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="19" viewBox="0 0 20.063 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.99;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Вход" class="cls-1" d="M688,669.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3v12.977a3,3,0,0,1-3,3H691a3,3,0,0,1-3-3V681h2v2h13V668H690v1.969h-2Zm-3,8.046h6.029v2.744l7.027-5.3-7.027-5.3V672.9H685v5.113Z" transform="translate(-685 -666)"/>
+</svg>

@@ -1,0 +1,62 @@
+/*Общие стили*/
+body {
+  font-family: $roboto-regular;
+  color: #849d8f;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  min-width: 900px;
+}
+input {
+  background-color: white;
+  border: 1px solid $border-color;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $roboto-regular;
+  border-radius: 5px;
+  &::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  &:-moz-placeholder {
+    color: $input-text-color;
+  }
+  &:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+}
+input:hover {
+  color: $input-text-color;
+  border: 2px solid $border-color-hover;
+}
+input:focus {
+  border: 2px solid $border-color-focus;
+}
+input:invalid {
+  border-color: #f0b1b1;
+}
+textarea {
+  border: 1px solid $border-color;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: $roboto-regular;
+  &::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  &:-moz-placeholder {
+    color: $input-text-color;
+  }
+  &:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+}
+textarea:hover {
+  color: $input-textarea-color;
+}
+textarea:focus {
+  color: $input-textarea-color;
+}
+textarea:invalid {
+  color: #f0b1b1;
+}

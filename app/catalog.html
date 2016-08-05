@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
+  <title>Глейси - главная</title>
+  <link href="#" rel="shortcut icon">
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- symbols-fonts for example font-awesome-->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img class="logo__link" src="http://placehold.it/153x63" width="153" height="63" alt="логотип"></a>
+      <!-- end logo -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог</a>
+            <ul class="supnav">
+              <li class="supnav__item"><a href="#">Новинки</a></li>
+              <li class="supnav__item"><a href="#">Сливочное</a></li>
+              <li class="supnav__item"><a href="#">Щербеты</a></li>
+              <li class="supnav__item"><a href="#">Фруктовый лед</a></li>
+              <li class="supnav__item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О Компании</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end nav -->
+      <div class="user-block">
+        <i class="user-block__search"></i>
+        <!-- end user-block__search -->
+        <form class="user-block__search-form" action="#" method="post">
+          <input type="search" name="search-btn" id="search-field" placeholder="Что ищем?">
+          <label for="search-field"></label>
+        </form>
+        <!-- end user-block__search-form -->
+        <a href="#" class="user-block__login">Вход</a>
+        <!-- end user-block__login -->
+        <form class="user-block__login-form" action="#" method="get">
+          <input type="email" name="email" id="email-field" placeholder="Электронная почта" required>
+          <label for="email-field"></label>
+
+          <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+          <label for="password-field"></label>
+
+          <button class="login-form__form-btn" type="submit">Войти</button>
+          <a class="login-form__link-forgot" href="#">Забыли пароль?</a>
+          <a class="login-form__new-account-link" href="#">Новая регистрация</a>
+        </form>
+        <!-- end user-block__login-form -->
+        <a href="#" class="user-block__basket">2 товара</a>
+        <!-- end user-block__basket -->
+        <div class="user-block__basket_goods">
+          <table class="goods__table">
+            <tr class="goods__item">
+              <td><img class="goods__img" src="#" alt="фото товара №1"></td>
+              <td class="goods__desc">Пломбир с апельсиновым джемом</td>
+              <td class="goods__number">1,5 кг х 200 руб.</td>
+              <td class="goods__price">300 руб.</td>
+            </tr>
+            <tr class="goods__item">
+              <td><img class="goods__img" src="#" alt="фото товара №2"></td>
+              <td class="goods__desc">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="goods__number">1,5 кг х 300 руб.</td>
+              <td class="goods__price">450 руб.</td>
+            </tr>
+          </table>
+          <!-- end goods__table -->
+          <span class="goods__all">Итого
+            <i class="goods__all--price">750 руб.</i>
+          </span>
+          <!-- end goods__all -->
+          <a class="goods__buy" href="#">Оформить заказ</a>
+        </div>
+        <!-- end user-block__basket_goods -->
+        <div class="user-block__timework">
+          <span>С 10 до 20, ежедневно</span>
+          <a class="user-block__tell" href="tel:88124502525">8 812 450-25-25</a>
+        </div>
+        <!-- end user-block__timework -->
+      </div>
+      <!-- end user-block -->
+    </div>
+    <!-- end container -->
+  </header>
+  <main class="page-content">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Сливочное</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end breadcrumbs -->
+      <h1 class="catalog-title">Сливочное мороженое</h1>
+      <!-- end catalog-title -->
+      <section class="filter">
+        <form class="filter-form" action="#" method="post">
+          <!-- сортировка -->
+          <div class="filter-sort">
+            <label class="filter-sort__title"
+              for="sort-list-field">Сортировка:</label>
+            <select name="sort-list" id="sort-list-field">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </div>
+          <!-- цена -->
+          <div class="filter-custom">
+            <div class="filter-custom__range">
+              <span class="filter__price">Цена:</span>
+              <input type="text" name="min-price" id="min-price-field" value="100">
+              <span class="filter__currency">руб.</span>
+              <input type="text" name="max-price" id="max-price-field" value="500">
+              <span class="filter__currency">руб.</span>
+            </div>
+            <!-- end filter__range -->
+            <div class="filter-custom__controls">
+              <div class="filter__scale">
+                <div class="filter__bar"></div>
+              </div>
+              <div class="filter__toggle filter__toggle--min"></div>
+              <div class="filter__toggle filter__toggle--max"></div>
+            </div>
+            <!-- end filter__controls -->
+
+          </div>
+          <!-- жирность -->
+          <div class="filter-fatness">
+            <fieldset>
+            <legend class="filter-fatness__title">Жирность</legend>
+
+            <input type="radio" name="group-one" id="first-value-field">
+            <label for="first-value-field">0%</label>
+
+            <input type="radio" name="group-one" id="second-value-field" checked>
+            <label for="second-value-field">до 10%</label>
+
+            <input type="radio" name="group-one" id="third-value-field">
+            <label for="third-value-field">до 30%</label>
+
+            <input type="radio" name="group-one" id="fourth-value-field">
+            <label for="fourth-value-field">выше 30%</label>
+            </fieldset>
+          </div>
+          <!-- наполнители -->
+          <div class="filter-fillers">
+            <fieldset>
+            <legend class="filter-fillers__title">Наполнители</legend>
+
+            <input type="checkbox" name="filler-one" id="filler-one-field" checked>
+            <label for="filler-one-field">шоколадные</label>
+
+            <input type="checkbox" name="filler-two" id="filler-two-field" checked>
+            <label for="filler-two-field">сахарные присыпки</label>
+
+            <input type="checkbox" name="filler-three" id="filler-three-field">
+            <label for="filler-three-field">фрукты</label>
+
+            <input type="checkbox" name="filler-four" id="filler-four-field">
+            <label for="filler-four-field">сиропы</label>
+
+            <input type="checkbox" name="filler-five" id="filler-five-field">
+            <label for="filler-five-field">джемы</label>
+                </fieldset>
+          </div>
+
+          <button class="filter-form__btn" type="submit">Применить</button>
+        </form>
+      </section>
+      <!-- end filter -->
+      <section class="catalog">
+        <div class="catalog__item">
+          <img src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №1">
+          <span class="catalog__item--price">310<i></i>/кг</span>
+          <p class="catalog__item--text">Сливочное с
+            апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <a class="catalog__item--link" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="catalog__item">
+          <img src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №2">
+          <span class="catalog__item--price">310<i></i>/кг</span>
+          <p class="catalog__item--text">Сливочное с
+            апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <a class="catalog__item--link" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="catalog__item">
+          <img src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №3">
+          <span class="catalog__item--price">310<i></i>/кг</span>
+          <p class="catalog__item--text">Сливочное с
+            апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <a class="catalog__item--link" href="#">Быстрый просмотр</a>
+        </div>
+        <div class="catalog__item">
+          <img src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №4">
+          <span class="catalog__item--price">310<i></i>/кг</span>
+          <p class="catalog__item--text">Сливочное с
+            апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <a class="catalog__item--link" href="#">Быстрый просмотр</a>
+        </div>
+      </section>
+      <!-- end catalog -->
+      <section class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+        </ul>
+      </section>
+      <!-- end pagination -->
+    </div>
+    <!-- end container -->
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="social">
+        <a class="social__btn social__btn--tv" href="#">Твиттер</a>
+        <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+        <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+        <a class="social__btn social__btn--vk" href="#">Вконтакте</a>
+      </div>
+      <!-- end social -->
+      <ul class="for-buyers">
+        <li class="for-buyers__item"><a href="#">Для поставщиков</a></li>
+        <li class="for-buyers__item"><a href="#">О производстве </a></li>
+        <li class="for-buyers__item"><a href="#">Наши документы</a></li>
+        <li class="for-buyers__item"><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <!-- end for-buyers -->
+      <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru"></a>
+          <span class="copyright__text">Сделано в HTML Academy &#169; 2016</span>
+      </div>
+      <!-- end copyright -->
+    </div>
+    <!-- end container -->
+  </footer>
+
+  <!-- Query -->
+  <!-- Plugins Query.js -->
+  <!-- custom scripts.js -->
+  <script src="js/common.js" async></script>
+  <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

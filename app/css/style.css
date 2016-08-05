@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* подключаем все кусочки кодов в главный файл*/
+/* Переменные и миксины*/
+/* переменные цветом и типографики*/
+/* Переменные и миксины*/
+/* Глобальные стили для всего проекта*/
+/* Шрифты */
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/roboto-regular.woff") format("woff"), url("../fonts/RobotoRegular/roboto-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/roboto-medium.woff") format("woff"), url("../fonts/RobotoMedium/roboto-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold/roboto-bold.woff") format("woff"), url("../fonts/RobotoBold/roboto-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+/*Общие стили*/
+body {
+  font-family: "RobotoRegular", "Arial", sans-serif;
+  color: #5a5a5a;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  min-width: 900px; }
+
+input {
+  background-color: white;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "RobotoRegular", "Arial", sans-serif;
+  border-radius: 5px; }
+  input::-webkit-input-placeholder {
+    color: #999; }
+  input:-moz-placeholder {
+    color: #999; }
+  input:-ms-input-placeholder {
+    color: #999; }
+
+input:hover {
+  color: #999;
+  border: 2px solid rgba(154, 154, 154, 0.52); }
+
+input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52); }
+
+input:invalid {
+  border-color: #f0b1b1; }
+
+textarea {
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "RobotoRegular", "Arial", sans-serif; }
+  textarea::-webkit-input-placeholder {
+    color: #999; }
+  textarea:-moz-placeholder {
+    color: #999; }
+  textarea:-ms-input-placeholder {
+    color: #999; }
+
+textarea:hover {
+  color: #323232; }
+
+textarea:focus {
+  color: #323232; }
+
+textarea:invalid {
+  color: #f0b1b1; }
+
+/* Стили различных BEM-блоков*/
+h1 {
+  font-size: 25px;
+  color: green; }
