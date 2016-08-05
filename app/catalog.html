@@ -21,7 +21,7 @@
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">Каталог</a>
-            <ul class="supnav__list">
+            <ul class="supnav">
               <li class="supnav__item"><a href="#">Новинки</a></li>
               <li class="supnav__item"><a href="#">Сливочное</a></li>
               <li class="supnav__item"><a href="#">Щербеты</a></li>
@@ -63,21 +63,21 @@
         <a href="#" class="user-block__basket">2 товара</a>
         <!-- end user-block__basket -->
         <div class="user-block__basket_goods">
-          <ul class="goods__list">
-            <li class="goods__item">
-              <i class="goods__img"></i>
-              <p class="goods__desc">Пломбир с апельсиновым джемом</p>
-              <span class="goods__number">1,5 кг х 200 руб.</span>
-              <span class="goods__price">300 руб.</span>
-            </li>
-            <li class="goods__item">
-              <i class="goods__img"></i>
-              <p class="goods__desc">Клубничный пломбир с присыпкой из белого шоколада</p>
-              <span class="goods__number">1,5 кг х 300 руб.</span>
-              <span class="goods__price">450 руб.</span>
-            </li>
-          </ul>
-          <!-- end goods__list -->
+          <table class="goods__table">
+            <tr class="goods__item">
+              <td><img class="goods__img" src="#" alt="фото товара №1"></td>
+              <td class="goods__desc">Пломбир с апельсиновым джемом</td>
+              <td class="goods__number">1,5 кг х 200 руб.</td>
+              <td class="goods__price">300 руб.</td>
+            </tr>
+            <tr class="goods__item">
+              <td><img class="goods__img" src="#" alt="фото товара №2"></td>
+              <td class="goods__desc">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="goods__number">1,5 кг х 300 руб.</td>
+              <td class="goods__price">450 руб.</td>
+            </tr>
+          </table>
+          <!-- end goods__table -->
           <span class="goods__all">Итого
             <i class="goods__all--price">750 руб.</i>
           </span>

@@ -83,3 +83,6 @@ textarea:invalid {
   color: #f0b1b1; }
 
 /* Стили различных BEM-блоков*/
+h1 {
+  font-size: 25px;
+  color: green; }
