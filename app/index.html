@@ -19,19 +19,29 @@
     <header class="page-header">
       <div class="container">
         <a class="logo">
-          <img class="logo__link" src="http://placehold.it/153x63" width="153" height="63" alt="логотип">
+          <img class="logo__link" src="img/gllacy-logo.svg" width="153" height="63" alt="логотип">
         </a>
         <!-- end logo -->
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item nav__item--active">
+            <li class="nav__item">
               <a class="nav__link nav__link--active" href="#">Каталог</a>
-              <ul class="supnav__list">
-                <li class="supnav__item"><a href="#">Новинки</a></li>
-                <li class="supnav__item"><a href="catalog.html">Сливочное</a></li>
-                <li class="supnav__item"><a href="#">Щербеты</a></li>
-                <li class="supnav__item"><a href="#">Фруктовый лед</a></li>
-                <li class="supnav__item"><a href="#">Мелорин</a></li>
+              <ul class="supnav" id="#supnav">
+                <li class="supnav__item">
+                  <a class="supnav__link" href="#">Новинки</a>
+                </li>
+                <li class="supnav__item">
+                  <a class="supnav__link" href="#">Сливочное</a>
+                </li>
+                <li class="supnav__item">
+                  <a class="supnav__link supnav__link--active" href="#">Щербеты</a>
+                </li>
+                <li class="supnav__item">
+                  <a class="supnav__link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="supnav__item">
+                  <a class="supnav__link" href="#">Мелорин</a>
+                </li>
               </ul>
             </li>
             <li class="nav__item">
@@ -44,16 +54,16 @@
         </nav>
         <!-- end nav -->
         <div class="user-block">
-          <i class="user-block__search"></i>
+          <i class="user-block__search" id="search-field">Поиск</i>
           <!-- end user-block__search -->
-          <form class="user-block__search-form" action="#" method="post">
+          <form class="user-block__search-form" action="#" method="post" id="search-form">
             <input type="search" name="search-btn" id="search-field" placeholder="Что ищем?">
             <label for="search-field"></label>
           </form>
           <!-- end user-block__search-form -->
-          <a href="#" class="user-block__login">Вход</a>
+          <a href="#" class="user-block__login" id="login-field">Вход</a>
           <!-- end user-block__login -->
-          <form class="user-block__login-form" action="#" method="get">
+          <form class="user-block__login-form" action="#" method="get" id="login-form">
             <input type="email" name="email" id="email-field" placeholder="Электронная почта" required>
             <label for="email-field"></label>
 

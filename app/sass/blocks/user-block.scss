@@ -1,0 +1,297 @@
+.user-block {
+  position: relative;
+  float: right;
+  max-width: 267px;
+  margin-top: 23px;
+  font-size: 0;
+}
+.user-block__search {
+  position: relative;
+  display: block;
+  float: left;
+  width: 34px;
+  height: 34px;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color: rgba(0,0,0,.2);
+  background-image: url("../../img/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    background: $link url("../../img/icons/icon-search-black.png") no-repeat center center;
+    transition: background 0.8s ease 0s;
+  }
+  &:active {
+    color: #333;
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px dimgrey;
+    transition: none;
+  }
+}
+.user-block__search-form {
+  margin: 0;
+  border: 0;
+  z-index: 2;
+  position: absolute;
+  width: 342px;
+  top: 37px;
+  right: 225px;
+  padding: 20px 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  display: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  & input {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    height: 44px;
+    padding: 0 10px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder {
+      color: $input-text-color;
+    }
+    &:-moz-placeholder {
+      color: $input-text-color;
+    }
+    &:-ms-input-placeholder {
+      color: $input-text-color;
+    }
+    &:hover {
+      border-color: $border-color-hover;
+    }
+    &:focus {
+      border-color: $border-color-focus;
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+      &:-moz-placeholder {
+        color: transparent;
+      }
+      &:-ms-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+}
+.user-block__login {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 9px 0;
+  padding-left: 43px;
+  padding-right: 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $roboto-medium;
+  color: $link;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: right;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,.2);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 15px;
+    background: transparent url("../../img/icons/icon-enter-white.png") no-repeat center center;
+  }
+  &:hover {
+    color: #000;
+    background-color: $link;
+    transition: background 0.8s ease 0s;
+    &::before {
+      background: transparent url("../../img/icons/icon-enter-black.png") no-repeat center center;
+    }
+  }
+  &:active {
+    color: #333;
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px dimgrey;
+    transition: none;
+  }
+}
+.user-block__login-form {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  z-index: 2;
+  position: absolute;
+  width: 278px;
+  top: 37px;
+  right: 125px;
+  padding: 20px 19px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  display: none;
+  box-sizing: border-box;
+  & input {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    height: 44px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &::-webkit-input-placeholder {
+      color: $input-text-color;
+    }
+    &:-moz-placeholder {
+      color: $input-text-color;
+    }
+    &:-ms-input-placeholder {
+      color: $input-text-color;
+    }
+    &:hover {
+      border-color: $border-color-hover;
+    }
+    &:focus {
+      border-color: $border-color-focus;
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+      &:-moz-placeholder {
+        color: transparent;
+      }
+      &:-ms-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+  & .login-form__form-btn {
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    color: $button-textcolor;
+    @include button-background;
+    @include button-box-shadow;
+    @include button-text-shadow;
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $roboto-bold;
+    border-radius: 100px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    &:hover {
+      color: $button-textcolor;
+      @include button-background-hover;
+      @include button-box-shadow-hover;
+      transition: all 0.8s ease 0s;
+    }
+    &:active {
+      color: $button-textcolor-active;
+      @include button-background-active;
+      @include button-box-shadow-active;
+    }
+  }
+  & .login-form__link-forgot,
+  .login-form__new-account-link {
+    display: block;
+    float: right;
+    color: $link2;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: $roboto-regular;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    &:hover {
+      color: $link-hover;
+      border-bottom: 1px solid rgba(255,188,158,.3);
+      transition: all 0.3s ease 0s;
+    }
+    &:active {
+      color: $link-active;
+      border-bottom: 1px solid rgba(255,188,158,.3);
+      transition: none;
+    }
+  }
+}
+.user-block__basket {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 9px 0;
+  padding-left: 44px;
+  padding-right: 34px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $roboto-medium;
+  color: $link;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: right;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,.2);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left: 15px;
+    background: transparent url("../../img/icons/icon-basket-white.png") no-repeat center;
+  }
+  &:hover {
+    color: #000;
+    background-color: $link;
+    transition: background 0.8s ease 0s;
+    &::before {
+      background: transparent url("../../img/icons/icon-basket-black.png") no-repeat center center;
+    }
+  }
+  &:active {
+    color: #333;
+    background-color: #ededed;
+    box-shadow: inset 0 2px 1px dimgrey;
+    transition: none;
+  }
+}
+.user-block__timework {
+  max-width: 100%;
+  float: right;
+  padding-top: 15px;
+  font-size: 16px;
+}
+.user-block__timework span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $roboto-bold;
+  color: $link;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.user-block__tell {
+  color: $link;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $roboto-bold;
+  text-decoration: none;
+  font-weight: 700;
+}
+#search-field:hover ~ #search-form,
+#login-field:hover ~ #login-form {
+  display: block;
+}

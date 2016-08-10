@@ -1,33 +1,75 @@
 /* переменные цветом и типографики*/
 $base-color: #323232;
-// $dark-base-color: #3bb09d;
+$base-bg-color: #3bb09d;
 // $additional-color: #56C3B2;
-// $gray-color: #F1F1F1;
 
+
+/*Фон сладов*/
+$bg-color-slider1: #849d8f;
+$bg-color-slider2: #8996a6;
+$bg-color-slider3: #9d8b84;
+
+/*Шрифты*/
 $roboto-regular: "RobotoRegular", "Arial", sans-serif;
 $roboto-medium: "RobotoMedium", "Arial", sans-serif;
 $roboto-bold: "RobotoBold", "Arial", sans-serif;
 
+/*Текст кнопок*/
 $button-textcolor: #fff;
 $button-textcolor-active: #fceeec;
 
+/*Бордер*/
 $border-color: rgba(178, 178, 178, 0.52);
 $border-color-hover: rgba(154, 154, 154, 0.52);
 $border-color-focus: rgba(46, 136, 228, 0.52);
 
+/*Текст полей ввода*/
 $input-text-color: #999;
 $input-textarea-color: #323232;
 
+/*Цвета всех ссылок, прозрачный фон*/
 $link: #fff;
 $link-hover: #ffbc9e;
 $link-active: #ffbc9e;
 
+/*Цвета всех ссылок, белый фон*/
 $link2: #323232;
 $link2-hover: #e84d37;
 $link2-active: #e84d37;
 
-$nav-background-hover: #fbded7;
-$nav-background-active: #f6b5a5;
-$nav-background-page: #d07058;
+/*Цвета nav меню*/
+$link-nav: #fff;
+$link-nav-hover: #333;
+$link-nav-active: #333;
+$bg-nav: transparent;
+$bg-nav-hover: #f7f6f3;
+$bg-nav-active: #ededed;
+
+/*Цвета nav меню --active*/
+$link-nav--active: #fff;
+$link-nav--active-hover: #fff ;
+$bg-nav-onpage: #d07058;
+$bg-nav-onpage-hover: #d07058;
+
+
+/*Цвета supnav меню*/
+$link-supnav: #323232;
+$link-supnav-hover: #323232;
+$link-supnav-active: #323232;
+$bg-supnav: #f8f7f4;
+$bg-supnav-hover: #fbded7;
+$bg-supnav-active: #f6b5a5;
+
+/*Цвета supnav меню--active*/
+$link-supnav-onpage: #fff;
+$link-supnav-onpage-hover: #fff;
+$bg-supnav-onpage: #d07058;
+$bg-supnav-onpage-hover: #d07058;
+
+
+
+$tablet-widths: "(min-width: 768px)";
+$tablet-widths: "(min-width: 900px)"; // временно
+$desktop-widths: "(max-width: 1146px)";
 
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

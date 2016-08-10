@@ -1,0 +1,92 @@
+.slaider {
+  position: relative;
+  padding-top: 270px;
+  text-align: center;
+  color: $link;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+.slaider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slaider__item {
+  display: none;
+}
+.slaider__title {
+  width: 61%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+.slaider__btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 40px;
+  @include button-background;
+  @include button-box-shadow;
+  @include button-text-shadow;
+  color: $button-textcolor;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: $roboto-bold;
+  text-decoration: none;
+  border-radius: 100px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  &:hover {
+    color: $button-textcolor;
+    @include button-background-hover;
+    @include button-box-shadow-hover;
+    transition: all 0.8s ease 0s;
+  }
+  &:active {
+    color: $button-textcolor-active;
+    @include button-background-active;
+    @include button-box-shadow-active;
+  }
+}
+.slaider__controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  font-size: 0;
+  z-index: 20;
+    & label {
+    display: inline-block;
+    vertical-align: top;
+    width: 21px;
+    height: 21px;
+    margin-right: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    }
+}
+/*Переключение слайдов*/
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+/*Переключение картинки слайдов*/
+#btn-1:checked ~ .site-wrapper {
+  background: $bg-color-slider1 url("../../img/pict/slide1.png") no-repeat top center;
+}
+#btn-2:checked ~ .site-wrapper {
+  background: $bg-color-slider2 url("../../img/pict/slide2.png") no-repeat top center;
+}
+#btn-3:checked ~ .site-wrapper {
+  background: $bg-color-slider3 url("../../img/pict/slide3.png") no-repeat top center;
+}
+/*Переключение фона у кнопок слайдера*/
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #fff;
+}

@@ -1,0 +1,81 @@
+.discount {
+  color: #fff;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+.discount__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include clearfix();
+}
+.discount__item {
+  width: 48.9%;
+  margin-right: 2.2%;
+  border-radius: 15px;
+
+  // background: orange;
+  &:nth-child(2n-1) {
+    float: left;
+    background: transparent url("../../img/bg1.jpg") no-repeat center;
+    background-size: cover;
+  }
+  & .discount__title {
+    margin: 0;
+    padding: 20px;
+    color: $link;
+    font-size: 35px;
+    line-height: 41px;
+    font-family: $roboto-bold;
+    flex-flow: 700;
+  }
+  & .discount__text {
+    margin: 0;
+    padding: 0 20px;
+    margin-bottom: 45px;
+    color: $link;
+  }
+  & .discount__btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 374px;
+    margin-bottom: 23px;
+    padding: 11px 23px;
+    @include button-background;
+    @include button-box-shadow;
+    @include button-text-shadow;
+    color: $button-textcolor;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: $roboto-bold;
+    text-decoration: none;
+    border-radius: 100px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover {
+      color: $button-textcolor;
+      @include button-background-hover;
+      @include button-box-shadow-hover;
+      transition: all 0.8s ease 0s;
+    }
+    &:active {
+      color: $button-textcolor-active;
+      @include button-background-active;
+      @include button-box-shadow-active;
+    }
+  }
+
+  &:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+    background: transparent url("../../img/bg2.jpg") no-repeat center;
+    background-size: cover;
+    & .discount__btn {
+      margin-left: 350px;
+      padding: 11px 21px;
+    }
+  }
+}
