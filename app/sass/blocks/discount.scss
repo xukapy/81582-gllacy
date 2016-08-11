@@ -13,8 +13,6 @@
   width: 48.9%;
   margin-right: 2.2%;
   border-radius: 15px;
-
-  // background: orange;
   &:nth-child(2n-1) {
     float: left;
     background: transparent url("../../img/bg1.jpg") no-repeat center;
@@ -39,7 +37,8 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    margin-left: 374px;
+    float: right;
+    margin-right: 22px;
     margin-bottom: 23px;
     padding: 11px 23px;
     @include button-background;
@@ -74,7 +73,6 @@
     background: transparent url("../../img/bg2.jpg") no-repeat center;
     background-size: cover;
     & .discount__btn {
-      margin-left: 350px;
       padding: 11px 21px;
     }
   }

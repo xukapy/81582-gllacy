@@ -31,7 +31,7 @@
                   <a class="supnav__link" href="#">Новинки</a>
                 </li>
                 <li class="supnav__item">
-                  <a class="supnav__link" href="#">Сливочное</a>
+                  <a class="supnav__link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="supnav__item">
                   <a class="supnav__link supnav__link--active" href="#">Щербеты</a>
@@ -128,25 +128,29 @@
           </ul>
         </section>
         <section class="goods">
-          <div class="goods__item">
-            <img class="goods__img" src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №1">
-            <span class="goods__price">310<i></i>/кг</span>
+          <div class="goods__item goods__item--hit">
+            <img class="goods__img" src="img/pict/goods1.png" width="267" height="267" alt="фото товара №1">
+            <span class="goods__price">310<i>Рубль</i>/кг</span>
             <p class="goods__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <a class="goods__btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="goods__item">
-            <img class="goods__img" src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №2">
+          <div class="goods__item goods__item--hit">
+            <img class="goods__img" src="img/pict/goods2.png" width="267" height="267" alt="фото товара №2">
             <span class="goods__price">380<i></i>/кг</span>
             <p class="goods__text">Сливочно-кофейное с кусочками шоколада</p>
+            <a class="goods__btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="goods__item">
-            <img class="goods__img" src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №3">
+          <div class="goods__item goods__item--hit">
+            <img class="goods__img" src="img/pict/goods3.png" width="267" height="267" alt="фото товара №3">
             <span class="goods__price">415<i></i>/кг</span>
             <p class="goods__text">Сливочное крем-брюле с карамельной подливкой</p>
+            <a class="goods__btn" href="#">Быстрый просмотр</a>
           </div>
-          <div class="goods__item">
-            <img class="goods__img" src="http://placehold.it/267x267" width="267" height="267" alt="фото товара №4">
+          <div class="goods__item goods__item--hit">
+            <img class="goods__img" src="img/pict/goods4.png" width="267" height="267" alt="фото товара №4">
             <span class="goods__price">415<i></i>/кг</span>
             <p class="goods__text">Сливочное крем-брюле с карамельной подливкой</p>
+            <a class="goods__btn" href="#">Быстрый просмотр</a>
           </div>
         </section>
         <section class="features">
@@ -155,59 +159,59 @@
           на развес</h2>
           <ul class="features__list">
             <li class="features__item">
-              <i class="features__icon"></i>
+              <i class="features__icon features__icon--icecrem"></i>
               <p class="features__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="features__item">
-              <i class="features__icon"></i>
+              <i class="features__icon features__icon--cow"></i>
               <p class="features__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="features__item">
-              <i class="features__icon"></i>
+              <i class="features__icon features__icon--leaflet"></i>
               <p class="features__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
             <li class="features__item">
-              <i class="features__icon"></i>
+              <i class="features__icon features__icon--thermo"></i>
               <p class="features__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
         <section class="about">
-          <div class="blog">
-            <span class="blog__text">Новое в нашем блоге</span>
-            <a class="blog__logo" href="#">10  способов сервировки
+          <div class="about-blog">
+            <p class="about-blog__text">Новое в нашем блоге</p>
+            <a class="about-blog__link" href="#">10  способов сервировки
             фруктовых щербетов к столу</a>
           </div>
-          <form class="form" action="#" method="post">
-            <p class="form__desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+          <form class="about-form" action="#" method="post">
+            <p class="about-form__desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
             <input type="email" name="email" id="email_field" placeholder="Электронная почта">
             <label for="email_field"></label>
-            <button class="form-btn" type="submit">Отправить</button>
+            <button class="about-form__btn" type="submit">Отправить</button>
           </form>
         </section>
-        <section class="location">
-          <div class="location__map">
-            <i class="location__map-point"></i>
-          </div>
+      </div>
+      <!-- end container -->
+        <section class="location" id="map">
+
+          <!-- <div class="location__map">Для айфрейма</div> -->
+          <i class="location__map-point"></i>
           <div class="location__contacts">
             <div class="location__adress">
               <span class="location__magazine">Адрес главного офиса<br>
               и офлайн магазина:
-            </span>
-              <span class="location__street">ул. Большая Конюшенная 19/8,<br>
-              Санкт-Петербург
-            </span>
+              </span>
+              <span class="location__street">ул. Большая Конюшенная<br>
+                19/8, Санкт-Петербург
+              </span>
             </div>
             <div class="location__timework">
               <span>Для заказов по телефону:</span>
-              <a class="location__tell" href="tel:88124502525">8 812 450-25-25></a>
-              <span>С 10 до 20, ежедневно</span>
+              <a class="location__tell" href="tel:88124502525">8 812 450-25-25</a>
+              <span class="location__time">(С 10 до 20, ежедневно)</span>
             </div>
             <a class="location__feedback" href="#">Форма обратной связи</a>
           </div>
         </section>
-      </div>
-      <!-- end container -->
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -219,15 +223,23 @@
         </div>
         <!-- end social -->
         <ul class="for-buyers">
-          <li class="for-buyers__item"><a href="#"><span>Для поставщиков</span></a></li>
-          <li class="for-buyers__item"><a href="#">О производстве </a></li>
-          <li class="for-buyers__item"><a href="#">Наши документы</a></li>
-          <li class="for-buyers__item"><a href="#">Экологические стандарты</a></li>
+          <li class="for-buyers__item">
+            <a class="for-buyers__link" href="#"><span>Для поставщиков</span></a>
+          </li>
+          <li class="for-buyers__item">
+            <a class="for-buyers__link" href="#">Наши документы</a>
+          </li>
+          <li class="for-buyers__item">
+            <a class="for-buyers__link" href="#">О производстве</a>
+          </li>
+          <li class="for-buyers__item">
+            <a class="for-buyers__link" href="#">Экологические стандарты</a>
+          </li>
         </ul>
         <!-- end for-buyers -->
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru"></a>
-          <span class="copyright__text">Сделано в HTML Academy &#169; 2016</span>
+          <span class="copyright__text">Сделано в <i>HTML Academy</i> &#169; 2016</span>
         </div>
         <!-- end copyright -->
       </div>
@@ -240,6 +252,7 @@
   <!-- Query -->
   <!-- Plugins Query.js -->
   <!-- custom scripts.js -->
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <script src="js/common.js" async></script>
   <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

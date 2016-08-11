@@ -1,0 +1,135 @@
+.about {
+  color: $link2;
+  background-color: transparent;
+  margin-bottom: 40px;
+  // background-color: orange;
+  @include clearfix();
+}
+.about-blog {
+  float: left;
+  width: 48.9%;
+  min-height: 220px;
+  margin-right: 2.2%;
+  border-radius: 15px;
+  background: transparent url("../../img/bg-3.jpg") no-repeat;
+  background-size: cover;
+  padding-left: 20px;
+  padding-right: 220px;
+  box-sizing: border-box;
+}
+.about-blog__text {
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  font-family: $roboto-medium;
+  text-align: left;
+}
+.about-blog__link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: $roboto-bold;
+  color: $link2;
+  text-align: left;
+  padding-bottom: 85px;
+  margin-bottom: 85px;
+  cursor: pointer;
+  &:hover {
+    color: $link2-hover;
+  }
+  &:active {
+    color: $link2-active;
+  }
+}
+.about-form {
+  margin: 0;
+  border: 0;
+  width: 48.9%;
+  min-height: 220px;
+  border-radius: 15px;
+  float: right;
+  background: url("../../img/bg4.png") no-repeat center;
+  background-size: cover;
+}
+
+.about-form__desc {
+  margin: 0;
+  // margin-bottom: 36px;
+  padding: 32px 20px 37px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: $roboto-regular;
+}
+.about-form input {
+  margin: 0;
+  outline: 0;
+  width: 65.7%;
+  height: 44px;
+  padding: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 36px;
+  margin-left: 20px;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  &:-moz-placeholder {
+    color: $input-text-color;
+  }
+  &:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  &:hover {
+    border-color: $border-color-hover;
+  }
+  &:focus {
+    border-color: $border-color-focus;
+    &::-webkit-input-placeholder {
+      color: $base-color;
+    }
+    &:-moz-placeholder {
+      color: $base-color;
+    }
+    &:-ms-input-placeholder {
+      color: $base-color;
+    }
+  }
+}
+.about-form__btn {
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 19px;
+  @include button-background;
+  @include button-box-shadow;
+  @include button-text-shadow;
+  color: $button-textcolor;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: $roboto-bold;
+  text-decoration: none;
+  border-radius: 100px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  box-sizing: border-box;
+  &:hover {
+    color: $button-textcolor;
+    @include button-background-hover;
+    @include button-box-shadow-hover;
+    transition: all 0.8s ease 0s;
+  }
+  &:active {
+    color: $button-textcolor-active;
+    @include button-background-active;
+    @include button-box-shadow-active;
+  }
+}
