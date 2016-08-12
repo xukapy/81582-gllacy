@@ -1,12 +1,16 @@
 /*Общие стили*/
 body {
-  font-family: $roboto-regular;
-  color: #849d8f;
+
   margin: 0;
+  color: $base-color;
+  background-color: $base-bg-color;
   font-size: 16px;
   line-height: 22px;
+  font-family: $roboto-regular;
   font-weight: 400;
-  min-width: 900px;
+}
+body > input[type="radio"] {
+  display: none;
 }
 input {
   background-color: white;
@@ -31,6 +35,15 @@ input:hover {
 }
 input:focus {
   border: 2px solid $border-color-focus;
+  &::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &:-moz-placeholder {
+    color: transparent;
+  }
+  &:-ms-input-placeholder {
+    color: transparent;
+  }
 }
 input:invalid {
   border-color: #f0b1b1;

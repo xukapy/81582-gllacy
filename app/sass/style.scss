@@ -12,9 +12,11 @@
 /* Стили различных BEM-блоков*/
 // index.html
 @import "blocks/site-wrapper.scss";
+@import "blocks/container.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/nav.scss";
+@import "blocks/supnav.scss";
 @import "blocks/user-block.scss";
 @import "blocks/page-content.scss";
 @import "blocks/slaider.scss";

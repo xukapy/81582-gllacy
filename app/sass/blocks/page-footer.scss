@@ -1,0 +1,115 @@
+.page-footer {
+  min-height: 103px;
+  @include clearfix();
+}
+.social {
+  max-width: 268px;
+  float: left;
+  font-size: 0;
+  margin-right: 215px;
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+.social__btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 37px;
+  height: 37px;
+  margin-right: 12px;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 6px solid rgba(255,255,255,0.5);
+  opacity: 0.8;
+  box-sizing: border-box;
+  transition: all 0.5s ease 0s;
+  &--tv {
+    background: transparent url("../../img/icons/icon-tv.svg") no-repeat center;
+  }
+  &--inst {
+    background: transparent url("../../img/icons/icon-inst.svg") no-repeat center;
+  }
+  &--fb {
+    background: transparent url("../../img/icons/icon-fb.svg") no-repeat center;
+  }
+  &--vk {
+    background: transparent url("../../img/icons/icon-vk.svg") no-repeat center;
+  }
+  &:hover {
+    opacity: 1;
+    border-color: rgba(255,255,255,0.71);
+  }
+  &:active {
+    border-color: rgba(255,255,255,0.7);
+    box-shadow: inset 0 2px 1px #888;
+  }
+}
+.for-buyers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 400px;
+  width: 28.8%;
+  margin-top: 36px;
+  float: left;
+  // background-color: #444;
+}
+.for-buyers__item {
+  float: left;
+  padding-left: 22px;
+}
+.for-buyers__link {
+  display: inline-block;
+  vertical-align: top;
+  color: $link;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: $roboto-regular;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+  & span {
+    font-weight: 700;
+    font-family: $roboto-bold;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: -20px;
+      width: 15px;
+      height: 13px;
+      background: url("../../img/icons/icon-heart.svg") no-repeat;
+    }
+  }
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    color:   $link-active;
+  }
+}
+.copyright {
+  width: 17.2%;
+  float: right;
+}
+.copyright__link {
+  display: block;
+  width: 108px;
+  height: 36px;
+  margin-top: 20px;
+  background: transparent url("../../img/h-acadamy-logo.svg") no-repeat center;
+  cursor: pointer;
+}
+.copyright__text {
+  display: block;
+  color: #fefefe;
+  font-family: $roboto-regular;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  & i {
+    font-style: normal;
+    text-decoration: underline;
+  }
+}
