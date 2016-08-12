@@ -43,6 +43,7 @@
   font-family: $roboto-regular;
   text-decoration: none;
   font-weight: 400;
+  border-radius: 5px;
   cursor: pointer;
   z-index: 2;
   &:hover {
@@ -56,6 +57,7 @@
   &--active {
     color: $link-supnav-onpage;
     background-color: $bg-supnav-onpage;
+    border-radius: 0;
     &:hover {
       color: $link-supnav-onpage-hover;
       background-color: $bg-supnav-onpage-hover;

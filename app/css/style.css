@@ -171,10 +171,11 @@ textarea:invalid {
   font-family: "RobotoBold", "Arial", sans-serif;
   color: #fff;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.2);
+          text-decoration-color: rgba(0, 0, 0, 0.2);
   background-color: transparent;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  cursor: pointer; }
   .nav__link:hover {
     color: #333;
     background-color: #f7f6f3;
@@ -243,6 +244,7 @@ textarea:invalid {
   font-family: "RobotoRegular", "Arial", sans-serif;
   text-decoration: none;
   font-weight: 400;
+  border-radius: 5px;
   cursor: pointer;
   z-index: 2; }
   .supnav__link:hover {
@@ -253,7 +255,8 @@ textarea:invalid {
     transition: none; }
   .supnav__link--active {
     color: #fff;
-    background-color: #d07058; }
+    background-color: #d07058;
+    border-radius: 0; }
     .supnav__link--active:hover {
       color: #fff;
       background-color: #d07058; }
@@ -484,13 +487,13 @@ textarea:invalid {
     height: 20px;
     top: 7px;
     left: 15px;
-    background: transparent url("../../img/icons/icon-basket-white.png") no-repeat center; }
+    background: transparent url("../../img/icons/icon-basket.svg") no-repeat center; }
   .user-block__basket:hover {
     color: #000;
     background-color: #fff;
     transition: background 0.8s ease 0s; }
     .user-block__basket:hover::before {
-      background: transparent url("../../img/icons/icon-basket-black.png") no-repeat center center; }
+      background: transparent url("../../img/icons/icon-basket2.svg") no-repeat center center; }
   .user-block__basket:active {
     color: #333;
     background-color: #ededed;
@@ -637,7 +640,7 @@ textarea:invalid {
   .discount__item:nth-child(2n-1) {
     float: left;
     background: transparent url("../../img/bg1.jpg") no-repeat center;
-    background-size: cover; }
+    background-size: 100% 100%; }
   .discount__item .discount__title {
     margin: 0;
     padding: 20px;
@@ -689,7 +692,7 @@ textarea:invalid {
     float: right;
     margin-right: 0;
     background: transparent url("../../img/bg2.jpg") no-repeat center;
-    background-size: cover; }
+    background-size: 100% 100%; }
     .discount__item:nth-child(2n) .discount__btn {
       padding: 11px 21px; }
 
@@ -703,50 +706,52 @@ textarea:invalid {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  width: 23.125%;
   width: 25%;
-  padding-right: 2.25%;
   padding: 0 1.125%;
+  margin-bottom: 40px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.8s ease 0s;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  z-index: 3; }
+  .goods__item:last-child {
+    margin-right: 0; }
   .goods__item:hover {
-    min-height: 405px;
+    margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-    transition: all 0.8s ease 0s; }
+    z-index: 100; }
     .goods__item:hover .goods__text {
-      margin-bottom: 20px;
-      text-decoration: none;
-      transition: all 0.8s ease 0s; }
+      text-decoration: none; }
     .goods__item:hover .goods__btn {
-      opacity: 1;
+      display: inline-block;
       transition: all 0.8s ease 0s; }
     .goods__item:hover .goods__price {
-      bottom: 159px; }
+      top: 200px; }
   .goods__item--hit::before {
     content: "";
     position: absolute;
     z-index: 10;
     top: 0;
-    left: 0;
+    left: 0px;
     width: 61px;
     height: 61px;
     background: transparent url("../../img/icons/icon-hit.png") no-repeat; }
 
 .goods__img {
-  position: relative;
   z-index: 1;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-top: 5px; }
 
 .goods__price {
   position: absolute;
-  bottom: 110px;
+  bottom: 22%;
   left: 15px;
   margin: 0;
   font-size: 45px;
@@ -756,33 +761,42 @@ textarea:invalid {
   color: #fff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   z-index: 5; }
-  .goods__price i {
-    width: 32px;
-    font-size: 25px;
-    font-size: 0;
-    background: url("../../img/icons/icon-rub.png") no-repeat;
-    background-color: red; }
+  .goods__price span:first-child {
+    margin: 0;
+    position: relative;
+    margin-right: 35px; }
+    .goods__price span:first-child::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 80px;
+      font-size: 45px;
+      width: 27px;
+      height: 33px;
+      background: transparent url("../../img/icons/icon-rub.svg") no-repeat 100% 100%; }
+  .goods__price span:last-child {
+    margin: 0;
+    font-size: 30px; }
 
 .goods__text {
   margin: 0;
   min-height: 40px;
-  margin-bottom: 38px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   font-family: "RobotoMedium", "Arial", sans-serif;
   color: #fff;
   text-align: center;
-  text-decoration: underline;
-  -webkit-text-decoration-color: rgba(0, 0, 0, 0.2);
-          text-decoration-color: rgba(0, 0, 0, 0.2); }
+  text-decoration: underline; }
 
 .goods__btn {
   position: absolute;
   display: inline-block;
   vertical-align: top;
+  display: none;
   margin: 0 12.25%;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   padding: 10px 13px;
   color: #fff;
   font-size: 18px;
@@ -798,8 +812,7 @@ textarea:invalid {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   cursor: pointer;
-  box-sizing: border-box;
-  opacity: 0; }
+  box-sizing: border-box; }
   .goods__btn:hover {
     color: #fff;
     background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
@@ -892,7 +905,7 @@ textarea:invalid {
   margin-right: 2.2%;
   border-radius: 15px;
   background: transparent url("../../img/bg-3.jpg") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding-left: 20px;
   padding-right: 220px;
   box-sizing: border-box; }
@@ -930,7 +943,7 @@ textarea:invalid {
   border-radius: 15px;
   float: right;
   background: url("../../img/bg4.png") no-repeat center;
-  background-size: cover; }
+  background-size: 100% 100%; }
 
 .about-form__desc {
   margin: 0;
@@ -1021,8 +1034,8 @@ textarea:invalid {
 .location__map-point {
   position: absolute;
   z-index: 3;
-  top: 115px;
-  left: 385px;
+  top: 132px;
+  left: 270px;
   width: 218px;
   height: 142px;
   background: url(../../img/pict/map-point.png); }
@@ -1156,7 +1169,11 @@ textarea:invalid {
   .social__btn--vk {
     background: transparent url("../../img/icons/icon-vk.svg") no-repeat center; }
   .social__btn:hover {
-    opacity: 1; }
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.71); }
+  .social__btn:active {
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0 2px 1px #888; }
 
 .for-buyers {
   margin: 0;

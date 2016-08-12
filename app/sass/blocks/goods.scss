@@ -9,39 +9,40 @@
   display: inline-block;
   vertical-align: top;
   // width: 23.3%;
+  width: 23.125%;
   width: 25%;
-  padding-right: 2.25%;
+  // padding-right: 2.25%;
   // margin-right: 2.25%;
-  // padding-right: 1.125%;
-  // padding-left: 1.125%;
   padding: 0 1.125%;
+  margin-bottom: 40px;
+  // padding-bottom: 77px;
   font-size: 16px;
   // background-color: green;
   cursor: pointer;
   transition: all 0.8s ease 0s;
   box-sizing: border-box;
+  z-index: 3;
   &:last-child {
+    margin-right: 0;
     // padding-right: 0;
-    // margin-right: 0;
   }
   &:hover {
+    // padding-bottom: 77px;
+    margin-bottom: 0;
     .goods__text {
-      margin-bottom: 20px;
       text-decoration: none;
-      transition: all 0.8s ease 0s;
     }
     .goods__btn {
-      opacity: 1;
+      display: inline-block;
       transition: all 0.8s ease 0s;
     }
     .goods__price {
-      bottom: 159px;
+      top: 200px;
     }
-    min-height: 405px;
     background-color: rgba(255,255,255,.2);
     border-radius: 5px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-    transition: all 0.8s ease 0s;
+    z-index: 100;
   }
   &--hit {
     &::before {
@@ -49,7 +50,7 @@
       position: absolute;
       z-index: 10;
       top: 0;
-      left: 0;
+      left: 0px;
       width: 61px;
       height: 61px;
       background: transparent url("../../img/icons/icon-hit.png") no-repeat;
@@ -58,17 +59,19 @@
 }
 
 .goods__img {
-  position: relative;
+  // position: relative;
   z-index: 1;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
+  padding-top: 5px;
+  // padding: 10px;
 }
 .goods__price {
   position: absolute;
-  bottom: 110px;
+  bottom: 22%;
   left: 15px;
   margin: 0;
   font-size: 45px;
@@ -78,38 +81,48 @@
   color: $link;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   z-index: 5;
-  & i {
-    width: 32px;
-    font-size: 25px;
-    font-size: 0;
-    background: url("../../img/icons/icon-rub.png") no-repeat;
-    background-color: red;
+  & span:first-child {
+    margin: 0;
+    position: relative;
+    margin-right: 35px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 80px;
+      font-size: 45px;
+      width: 27px;
+      height: 33px;
+      background:  transparent url("../../img/icons/icon-rub.svg") no-repeat 100% 100%;
+    }
+  }
+  & span:last-child {
+    margin: 0;
+    font-size: 30px;
   }
 }
 .goods__text {
   margin: 0;
   min-height: 40px;
   // padding: 0 5px;
-  margin-bottom: 38px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   font-family: $roboto-medium;
   color: $link;
   text-align: center;
-  // border-bottom: 1px solid rgba(0,0,0,.2);
   text-decoration: underline;
-  text-decoration-color: rgba(0,0,0,.2);
+  // text-decoration-color: rgba(0,0,0,.2);
 }
 
 .goods__btn {
   position: absolute;
   display: inline-block;
   vertical-align: top;
-  // margin-left: 35px;
-  // margin-left: 14.5%;
+  display: none;
   margin: 0 12.25%;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   padding: 10px 13px;
   color: $button-textcolor;
   font-size: 18px;
@@ -125,7 +138,6 @@
   @include button-text-shadow;
   cursor: pointer;
   box-sizing: border-box;
-  opacity: 0;
   &:hover {
     color: $button-textcolor;
     @include button-background-hover;

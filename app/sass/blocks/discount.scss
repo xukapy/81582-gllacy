@@ -16,7 +16,7 @@
   &:nth-child(2n-1) {
     float: left;
     background: transparent url("../../img/bg1.jpg") no-repeat center;
-    background-size: cover;
+    background-size: 100% 100%;
   }
   & .discount__title {
     margin: 0;
@@ -71,7 +71,7 @@
     float: right;
     margin-right: 0;
     background: transparent url("../../img/bg2.jpg") no-repeat center;
-    background-size: cover;
+    background-size: 100% 100%;
     & .discount__btn {
       padding: 11px 21px;
     }
